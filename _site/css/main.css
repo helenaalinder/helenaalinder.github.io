@@ -1,0 +1,13 @@
+@import 
+  "base",
+  "layout",
+  "syntax-highlighting"
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
