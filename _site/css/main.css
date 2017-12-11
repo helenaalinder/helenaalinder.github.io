@@ -13,16 +13,37 @@ body {
 }
 
 h1 {
-	color: navy;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 5.5em;
+	color: rgb(2,69,113);
+	margin-top: 0;
 	position: center;
 }
 
 .textarea {
 	display: inline-block;
 	padding: 2em;
-	box-shadow: 0 0 1.5em;
+	box-shadow: 0 0 10px;
 	width: 35em;
 	height: 25em;
 	background-color: white;
-	opacity: 0.8;
+	background-color: rgba(256, 256, 256, .8);
+}
+
+.text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em; 
+	opacity: none;
+}
+
+/* Head font */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue.otf');
+}
+
+/* Head font */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand.otf');
 }
