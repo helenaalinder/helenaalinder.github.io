@@ -91,7 +91,3 @@ input#github {
 @font-face {
   font-family: 'BebasNeue';
   src: url("../fonts/BebasNeue.otf"); }
-/* Head font */
-@font-face {
-  font-family: 'Quicksand';
-  src: url("../fonts/Quicksand.otf"); }
