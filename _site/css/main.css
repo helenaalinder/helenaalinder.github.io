@@ -1,5 +1,6 @@
+/*$body-font: 'Barlow Semi Condensed', sans-serif;*/
 body {
-  background: url(../images/hav.jpeg) no-repeat center center fixed;
+  background: url(../images/cloud.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,31 +9,83 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  max-width: 100%;
-  max-height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 h1 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 4.7em;
+  font-size: 5em;
   color: #024571;
   margin-top: 0;
   position: center; }
 
 .textarea {
+  display: inline-block;
   position: fixed;
   padding: 2em;
-  box-shadow: 0 0 10px;
-  width: 35em;
+  /*box-shadow: 0 0 10px;*/
+  width: 40em;
   height: 25em;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.8); }
+             /*
+background-color: white;
+background-color: rgba(256, 256, 256, .8);*/ }
 
 .text {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 1.2em;
+  width: 40em !important;
+  padding-left: 1em;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em;
   text-align: left;
   color: #101721;
   opacity: none; }
+
+.icons {
+  position: relative;
+  padding-left: 1em;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1em; }
+
+.mail {
+  position: fixed; }
+
+input#mail {
+  background: transparent url(../icons/mail.png) no-repeat;
+  background-size: cover;
+  background-color: "Source Sans Pro", sans-serif;
+  border: none;
+  height: 3em;
+  width: 3em; }
+  input#mail:hover {
+    opacity: 0.6; }
+
+.github {
+  position: fixed; }
+
+input#github {
+  background: transparent url(../icons/github.png) no-repeat;
+  background-size: cover;
+  background-color: "Source Sans Pro", sans-serif;
+  border: none;
+  height: 3em;
+  width: 3em; }
+  input#github:hover {
+    opacity: 0.6; }
+
+/*label {
+	position: fixed;
+}*/
+.maillabel {
+  padding-top: 5px;
+  padding-left: 10px; }
+  .maillabel:hover {
+    opacity: 0.6; }
+
+.githublabel {
+  padding-bottom: 5px;
+  padding-left: 10px; }
+  .githublabel:hover {
+    opacity: 0.6; }
 
 /* Head font */
 @font-face {

@@ -1,13 +1,14 @@
 ---
 ---
 $heading-font: 'Source Sans Pro', sans-serif;
+$body-font: 'Nunito', sans-serif;
 $heading-color: rgb(2,69,113);
-$body-font: 'Barlow Semi Condensed', sans-serif;
+/*$body-font: 'Barlow Semi Condensed', sans-serif;*/
 $body-font-color: rgb(16,23,33);
 $complementary-color: rgab(177,99,0);
 
 body {
-	background: url(../images/hav.jpeg) no-repeat center center fixed;
+	background: url(../images/cloud.jpeg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -16,34 +17,95 @@ body {
 	display: flex; 
 	justify-content: center;
     text-align: center; 
-    max-width: 100%;
-    max-height: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
 	font-family: $heading-font;
-	font-size: 4.7em;
+	font-size: 5em;
 	color: $heading-color;
 	margin-top: 0;
 	position: center;
 }
 
 .textarea {
+	display: inline-block;
 	position: fixed;
 	padding: 2em;
-	box-shadow: 0 0 10px;
-	width: 35em;
-	height: 25em;
+	/*box-shadow: 0 0 10px;*/
+	width: 40em;
+	height: 25em;/*
 	background-color: white;
-	background-color: rgba(256, 256, 256, .8);
+	background-color: rgba(256, 256, 256, .8);*/
 }
 
 .text {
+	width: 40em !important;
+	padding-left: 1em;
 	font-family: $body-font;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	text-align: left;
 	color: $body-font-color;
 	opacity: none;
+}
+
+.icons {
+	position: relative;
+	padding-left: 1em;
+	text-align: left;
+	font-family: $body-font;
+	font-size: 1.1em;
+}
+
+
+.mail {
+	position: fixed;
+}
+input#mail {
+	background: transparent url(../icons/mail.png) no-repeat;
+	background-size: cover;
+	background-color: $heading-font;
+    border: none;
+    height: 3em;
+    width: 3em;
+    &:hover {
+      opacity: 0.6;
+    }
+}
+
+.github {
+	position: fixed;
+}
+input#github {
+	background: transparent url(../icons/github.png) no-repeat;
+	background-size: cover;
+	background-color: $heading-font;
+    border: none;
+    height: 3em;
+    width: 3em;
+    &:hover {
+      opacity: 0.6;
+    }
+}
+
+/*label {
+	position: fixed;
+}*/
+.maillabel {
+	padding-top: 5px;
+	padding-left: 10px;
+	&:hover {
+      opacity: 0.6;
+    }
+}
+
+.githublabel {
+	padding-bottom: 5px;
+	padding-left: 10px;
+	&:hover {
+      opacity: 0.6;
+    }
 }
 
 /* Head font */
