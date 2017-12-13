@@ -24,20 +24,27 @@ h2 {
   color: #024571;
   margin-bottom: 0.3em; }
 
-li {
-  width: 87%;
-  text-align: left;
-  font-family: "Nunito", sans-serif;
-  font-size: 0.9em; }
+span {
+  display: flex;
+  align-items: center;
+  padding-left: 0.4em; }
+
+a {
+  display: flex; }
+
+a:link {
+  color: black;
+  text-decoration: none; }
+
+a:visited {
+  color: black; }
 
 .textarea {
   margin: auto;
   margin-top: 3em;
-  /*box-shadow: 0 0 10px;*/
   width: 40em;
   height: 100vh;
-  /*background-color: white;*/
-  /*background-color: rgba(256, 256, 256, .8);*/ }
+  background: linear-gradient(rgba(0, 0, 0, 0) 90%); }
 
 .text {
   width: 40em;
@@ -46,43 +53,27 @@ li {
   text-align: left;
   color: #101721; }
 
-/*
 .mail {
-	position: relative;
-	float: left;
-	padding-left: 1em;
-	text-align: left;
-	font-family: $body-font;
-	font-size: 1.1em;
-}
-*/
-.mail {
-  text-align: left;
   font-family: "Nunito", sans-serif;
-  font-size: 1.1em; }
-
-input#mail {
-  background: transparent url(../icons/mail.png) no-repeat;
-  background-size: cover;
-  border: none;
-  height: 3em;
-  width: 3em; }
-  input#mail:hover {
+  font-size: 1.1em;
+  width: 40em;
+  text-align: left; }
+  .mail:hover {
     opacity: 0.6; }
 
+/*input#mail {
+	background: transparent url(../icons/mail.png) no-repeat;
+	background-size: cover;
+    border: none;
+    height: 3em;
+    width: 3em;
+}*/
 .github {
-  padding-top: 5px;
+  padding-top: 0.5em;
   text-align: left;
   font-family: "Nunito", sans-serif;
   font-size: 1.1em; }
-
-input#github {
-  background: transparent url(../icons/github.png) no-repeat;
-  background-size: cover;
-  border: none;
-  height: 3em;
-  width: 3em; }
-  input#github:hover {
+  .github:hover {
     opacity: 0.6; }
 
 .resumebox {
@@ -100,18 +91,6 @@ input#github {
   font-size: 1.1em;
   text-align: left;
   color: #101721; }
-
-.maillabel {
-  padding-top: 5px;
-  padding-left: 10px; }
-  .maillabel:hover {
-    opacity: 0.6; }
-
-.githublabel {
-  padding-bottom: 5px;
-  padding-left: 10px; }
-  .githublabel:hover {
-    opacity: 0.6; }
 
 /* Head font */
 @font-face {

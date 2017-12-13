@@ -5,7 +5,7 @@ $body-font: 'Nunito', sans-serif;
 $heading-color: rgb(2,69,113);
 /*$body-font: 'Barlow Semi Condensed', sans-serif;*/
 $body-font-color: rgb(16,23,33);
-$complementary-color: rgab(177,99,0);
+$complementary-color: rgb(177,99,0);
 
 body {
 	background: url(../images/cloud.jpeg) no-repeat center center fixed;
@@ -35,21 +35,31 @@ h2 {
 	margin-bottom: 0.3em;
 }
 
-li {
-  width: 87%;
-  text-align: left;
-  font-family: $body-font; 
-  font-size: 0.9em; 
+span {
+	display: flex;
+	align-items: center;
+	padding-left: 0.4em;
+}
+
+a {
+	display: flex;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
 }
 
 .textarea {
 	margin: auto;
 	margin-top: 3em;
-	/*box-shadow: 0 0 10px;*/
 	width: 40em;
 	height: 100vh;
-	/*background-color: white;*/
-	/*background-color: rgba(256, 256, 256, .8);*/
+	background: linear-gradient(rgba(0,0,0,0) 90%);
 }
 
 .text {
@@ -59,49 +69,33 @@ li {
 	text-align: left;
 	color: $body-font-color;
 }
-/*
+
 .mail {
-	position: relative;
-	float: left;
-	padding-left: 1em;
-	text-align: left;
 	font-family: $body-font;
 	font-size: 1.1em;
-}
-*/
-.mail {
+	width: 40em;
 	text-align: left;
-	font-family: $body-font;
-	font-size: 1.1em;
+	&:hover {
+		opacity: 0.6;
+	}
 }
 
-input#mail {
+/*input#mail {
 	background: transparent url(../icons/mail.png) no-repeat;
 	background-size: cover;
     border: none;
     height: 3em;
     width: 3em;
-    &:hover {
-      opacity: 0.6;
-    }
-}
+}*/
 
 .github {
-	padding-top: 5px;
+	padding-top: 0.5em;
 	text-align: left;
 	font-family: $body-font;
 	font-size: 1.1em;
-}
-
-input#github {
-	background: transparent url(../icons/github.png) no-repeat;
-	background-size: cover;
-    border: none;
-    height: 3em;
-    width: 3em;
-    &:hover {
-      opacity: 0.6;
-    }
+	&:hover {
+		opacity: 0.6;
+	}
 }
 
 .resumebox {
@@ -120,22 +114,6 @@ input#github {
 	font-size: 1.1em;
 	text-align: left;
 	color: $body-font-color;
-}
-
-.maillabel {
-	padding-top: 5px;
-	padding-left: 10px;
-	&:hover {
-      opacity: 0.6;
-    }
-}
-
-.githublabel {
-	padding-bottom: 5px;
-	padding-left: 10px;
-	&:hover {
-      opacity: 0.6;
-    }
 }
 
 /* Head font */
