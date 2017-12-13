@@ -104,13 +104,12 @@ input#github {
     }
 }
 
-/*.resumebox {
+.resumebox {
 	width: 40em;
 	height: 60em;
 	background-color: rgba(256, 256, 256, .9);
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1) inset;
 	margin: auto;
-	margin-top: 100vh - 30vh;
 }
 
 .resume {
@@ -121,8 +120,7 @@ input#github {
 	font-size: 1.1em;
 	text-align: left;
 	color: $body-font-color;
-	opacity: none;
-}*/
+}
 
 .maillabel {
 	padding-top: 5px;
