@@ -3,7 +3,6 @@
 $heading-font: 'Source Sans Pro', sans-serif;
 $body-font: 'Nunito', sans-serif;
 $heading-color: rgb(2,69,113);
-/*$body-font: 'Barlow Semi Condensed', sans-serif;*/
 $body-font-color: rgb(16,23,33);
 $complementary-color: rgb(177,99,0);
 
@@ -59,51 +58,45 @@ a:visited {
 	margin-top: 3em;
 	width: 40em;
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0) 90%);
+	/*background: black;*/
+	/*background: linear-gradient(rgba(0,0,0,0) 90%);*/
 }
 
 .text {
 	width: 40em;
 	font-family: $body-font;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	text-align: left;
 	color: $body-font-color;
 }
 
 .mail {
 	font-family: $body-font;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	width: 40em;
 	text-align: left;
 	&:hover {
-		opacity: 0.6;
+		opacity: 0.5;
 	}
 }
-
-/*input#mail {
-	background: transparent url(../icons/mail.png) no-repeat;
-	background-size: cover;
-    border: none;
-    height: 3em;
-    width: 3em;
-}*/
 
 .github {
 	padding-top: 0.5em;
 	text-align: left;
 	font-family: $body-font;
-	font-size: 1.1em;
+	font-size: 1.2em;
 	&:hover {
-		opacity: 0.6;
+		opacity: 0.5;
 	}
 }
 
 .resumebox {
 	width: 40em;
-	height: 60em;
+	height: 50em;
 	background-color: rgba(256, 256, 256, .9);
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1) inset;
 	margin: auto;
+	margin-bottom: 8em;
 }
 
 .resume {
@@ -114,10 +107,4 @@ a:visited {
 	font-size: 1.1em;
 	text-align: left;
 	color: $body-font-color;
-}
-
-/* Head font */
-@font-face {
-  font-family: 'BebasNeue';
-  src: url('../fonts/BebasNeue.otf');
 }
