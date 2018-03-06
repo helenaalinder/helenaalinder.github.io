@@ -15,24 +15,18 @@ body {
 	padding-top: 5em;
 	justify-content: center;
     text-align: center; 
-    height: 100%;
-    width: 100%;
+    width:100%;
 }
 
 h1 {
 	font-family: $heading-font;
+	font-weight: normal;
 	font-size: 5em;
 	color: $heading-color;
 	margin-top: 0;
 	position: center;
 }
 
-h2 {
-	font-family: $heading-font;
-	font-size: 1.4em;
-	color: $heading-color;
-	margin-bottom: 0.3em;
-}
 
 span {
 	display: flex;
@@ -55,56 +49,51 @@ a:visited {
 
 .textarea {
 	margin: auto;
-	margin-top: 3em;
-	width: 40em;
-	height: 100vh;
-	/*background: black;*/
-	/*background: linear-gradient(rgba(0,0,0,0) 90%);*/
+	padding-top: 3em;
+	width: 50em;
+	text-align: center;
 }
 
 .text {
-	width: 40em;
 	font-family: $body-font;
+	font-weight: normal;
 	font-size: 1.2em;
-	text-align: left;
+	text-align: center;
 	color: $body-font-color;
 }
 
-.mail {
+.buttons {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 2em;
+	justify-content: center;
+}
+
+a {
+	padding: 1em;
+	display: flex;
 	font-family: $body-font;
 	font-size: 1.2em;
-	width: 40em;
-	text-align: left;
-	&:hover {
-		opacity: 0.5;
-	}
+	text-align: center;
+	transition: 0.2s;
+}
+
+#icon {
+	transition: 0.2s; 
+}
+
+#icon:hover {
+	opacity: 0.5;
 }
 
 .github {
-	padding-top: 0.5em;
 	text-align: left;
 	font-family: $body-font;
 	font-size: 1.2em;
 	&:hover {
 		opacity: 0.5;
 	}
-}
-
-.resumebox {
-	width: 40em;
-	height: 50em;
-	background-color: rgba(256, 256, 256, .9);
-	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1) inset;
-	margin: auto;
-	margin-bottom: 8em;
-}
-
-.resume {
-	width: 40em;
-	padding-top: 2em;
-	padding-left: 4em;
-	font-family: $body-font;
-	font-size: 1.1em;
-	text-align: left;
-	color: $body-font-color;
 }
