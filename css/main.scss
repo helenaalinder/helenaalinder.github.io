@@ -35,7 +35,17 @@ span {
 }
 
 a {
+	margin: 1em;
 	display: flex;
+	font-family: $body-font;
+	font-size: 1.2em;
+	text-align: center;
+	transition: 0.3s;
+}
+
+a:hover {
+	opacity: 0.5;
+	transform: translateY(2px);
 }
 
 a:link {
@@ -68,32 +78,6 @@ a:visited {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    margin-top: 2em;
+    margin-top: 1em;
 	justify-content: center;
-}
-
-a {
-	padding: 1em;
-	display: flex;
-	font-family: $body-font;
-	font-size: 1.2em;
-	text-align: center;
-	transition: 0.2s;
-}
-
-#icon {
-	transition: 0.2s; 
-}
-
-#icon:hover {
-	opacity: 0.5;
-}
-
-.github {
-	text-align: left;
-	font-family: $body-font;
-	font-size: 1.2em;
-	&:hover {
-		opacity: 0.5;
-	}
 }
