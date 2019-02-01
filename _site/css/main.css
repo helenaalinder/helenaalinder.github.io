@@ -7,7 +7,8 @@ body {
   padding-top: 5em;
   justify-content: center;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 h1 {
   font-family: "Source Sans Pro", sans-serif;
@@ -32,7 +33,7 @@ a {
 
 a:hover {
   opacity: 0.5;
-  transform: translateY(2px); }
+  transform: translateY(1px); }
 
 a:link {
   color: black;
@@ -40,6 +41,21 @@ a:link {
 
 a:visited {
   color: black; }
+
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+#ref {
+  font-size: 0.7em; }
+
+#ref:hover {
+  opacity: 1;
+  transform: none; }
 
 .textarea {
   margin: auto;
