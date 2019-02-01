@@ -87,6 +87,8 @@ footer {
     margin-top: 3%; }
 
   .text {
+    margin: auto;
+    width: 90%;
     font-size: 2em; }
 
   .buttons {
@@ -100,7 +102,7 @@ footer {
     height: 100%; }
 
   span {
-    font-size: 2em; }
+    font-size: 1.8em; }
 
   #github-icon {
     width: 50%; }
